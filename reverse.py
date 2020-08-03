@@ -40,7 +40,7 @@ def game_loop():
             current *= 2
             total_steps_taken += 1
         elif(choice == 2):
-            current = (current * 3) + 1
+            current = (current // 3) + 1
             total_steps_taken += 1
     if current == target and total_steps_taken == steps_to_target:
         print("You Won!")
