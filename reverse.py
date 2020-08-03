@@ -44,8 +44,12 @@ def game_loop():
             total_steps_taken += 1
     if current == target and total_steps_taken == steps_to_target:
         print("You Won!")
+        print("Press enter to quit.")
+        input()
     else:
         print("You Lost!")
+        print("Press enter to quit.")
+        input()
 
 
 if(play_option == "y"):
